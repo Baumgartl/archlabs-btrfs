@@ -15,14 +15,14 @@ Install ArchLabs &lt;www.archlabslinux.com> 2018.03 with Btrfs filesystem.
     2. Partition Device: /dev/sda 13G
     3. Chose cfdisk and select gpt for label type.
     4. [NEW] -> Partition size: 512M     # Boot
-    5. [NEW] -> Partition size: 10G     # / with @, @home, @cache, @.snapshots
+    5. [NEW] -> Partition size: 10G     # / with @, @home, @cache, @snapshots
     6. [NEW] -> Partition size: 2.5G # Swap
     7. Click on Write, confirm and exit.
 
 3. Click CTRL+F2 and login as root with password archlabs.
 4. Format partitions:
     1. `mkfs.ext4 /dev/sda1`    # Boot
-    2. `mkfs.btrfs /dev/sda2`   # / with @, @home, @cache, @.snapshots
+    2. `mkfs.btrfs /dev/sda2`   # / with @, @home, @cache, @snapshots
     3. `mkswap /dev/sda3`       # Swap
 
 5. Create btrfs subvolumes:
@@ -47,13 +47,13 @@ Install ArchLabs &lt;www.archlabslinux.com> 2018.03 with Btrfs filesystem.
     1. `mount /dev/sda1 /mnt/boot`
     2. `swapoff /dev/sda3 && swapon /dev/sda3`
 
-8. Leave terminal with ALT+<KEY-LEFT> two times.
+8. Leave terminal by pressing ALT+[KEY-LEFT] two times.
 9. Go Back and Install ArchLabs.
 10. Wait a few minutes. 
-11. Select as Bootloader Device /dev/sda  13G
+11. Select as Bootloader Device /dev/sda 13G
 12. Set System Hostname, Locale + Timezone and Root Password.
 13. Create a New User and apply System Tweaks (if required).
-14. Go Back, click on Done and restart your new btrfs system with ArchLabs.
+14. Go Back, click on Done and restart into your new btrfs system with ArchLabs.
 
 ## Acknowledgements
 1. [Btrfs](https://btrfs.wiki.kernel.org/index.php/Main_Page) for this great and powerful filesystem,
