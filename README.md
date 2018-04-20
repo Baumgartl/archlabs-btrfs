@@ -54,3 +54,7 @@ Install ArchLabs &lt;www.archlabslinux.com> 2018.03 with Btrfs filesystem.
 12. Set System Hostname, Locale + Timezone and Root Password.
 13. Create a New User and apply System Tweaks (if required).
 14. Go Back, click on Done and restart your new btrfs system with ArchLabs.
+
+## Acknowledgements
+1. [Btrfs](https://btrfs.wiki.kernel.org/index.php/Main_Page) for this great and powerful filesystem,
+2. [unicks.eu](http://unicks.eu) aka Nick for all the great videos about GNU/Linux!
