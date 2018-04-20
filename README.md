@@ -58,3 +58,7 @@ Install ArchLabs &lt;www.archlabslinux.com> 2018.03 with Btrfs filesystem.
 ## Acknowledgements
 1. [Btrfs](https://btrfs.wiki.kernel.org/index.php/Main_Page) for this great and powerful filesystem,
 2. [unicks.eu](http://unicks.eu) aka Nick for all the great videos about GNU/Linux!
+
+## ToDoList
+1. [ ] Fix Markdown Syntax,
+2. [ ] Add terminal output for a better understanding.
