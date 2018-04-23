@@ -200,6 +200,31 @@ tmpfs          tmpfs     395M  8.0K  395M   1% /run/user/1000
 
 florian@myarchlabs ~ % ls /btrfs
 @  @log  @pkg  @snapshots
+
+florian@myarchlabs ~ % cat /etc/fstab
+# /dev/sda2 LABEL=root.btrfs
+UUID=0fdbc292-a9b2-4862-a4be-61b019db243a       /               btrfs           rw,noatime,compress=lzo,ssd,space_cache,subvolid=257,subvol=/@,subvol=@      0 0
+
+# /dev/sda2 LABEL=root.btrfs
+UUID=0fdbc292-a9b2-4862-a4be-61b019db243a       /btrfs          btrfs           rw,noatime,compress=lzo,ssd,space_cache,subvolid=5,subvol=/  0 0
+
+# /dev/sda2 LABEL=root.btrfs
+UUID=0fdbc292-a9b2-4862-a4be-61b019db243a       /.snapshots     btrfs           rw,noatime,compress=lzo,ssd,space_cache,subvolid=260,subvol=/@snapshots,subvol=@snapshots    0 0
+
+# /dev/sda2 LABEL=root.btrfs
+UUID=0fdbc292-a9b2-4862-a4be-61b019db243a       /var/cache/pacman/pkg   btrfs           rw,noatime,compress=lzo,ssd,space_cache,subvolid=258,subvol=/@pkg,subvol=@pkg        0 0
+
+# /dev/sda2 LABEL=root.btrfs
+UUID=0fdbc292-a9b2-4862-a4be-61b019db243a       /var/log        btrfs           rw,noatime,compress=lzo,ssd,space_cache,subvolid=259,subvol=/@log,subvol=@log        0 0
+
+# /dev/sda1 LABEL=boot.ext4
+UUID=2de35468-684c-4804-a29c-51aa708bf5e0       /boot           ext4            rw,relatime,data=ordered        0 2
+
+# /dev/sda3 LABEL=home.xfs
+UUID=dae18c6c-4361-4e73-a775-102662f08ff5       /home           xfs             rw,relatime,attr2,inode64,noquota   0 2
+
+# /dev/sda4 LABEL=swap.swap
+UUID=caffb094-e15e-4803-875f-b5a2b7152abc       none            swap            defaults,pri=-2 0 0
 ```
 
 ## Acknowledgements
